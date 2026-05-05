@@ -1,0 +1,66 @@
+/* Body uses CSS Grid for the overall page layout */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    gap: 1rem;
+    background: linear-gradient(180deg, #f5f7fb 0%, #e1e7f2 100%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2937;
+    padding: 1rem;
+}
+
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 12px 30px rgba(30, 58, 138, 0.12);
+}
+
+header h1 {
+    margin: 0 0 0.75rem;
+    font-size: 1.75rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8fafc;
+    padding: 0.5rem 0.85rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background: rgba(255, 255, 255, 0.24);
+    transform: translateY(-1px);
+}
+
+main {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #475569;
+}
