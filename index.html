@@ -3,20 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd131</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals page by Victor Mtisi with course overview, local image cards, and resource links for web development.">
+    <meta name="author" content="Victor Mtisi">
+    <title>WDD 131 – Dynamic Web Fundamentals – Victor Mtisi</title>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <h1>baphilani</h1>
+        <h1><span id="course-title">WDD 131 – Dynamic Web Fundamentals</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/victor-mtisi-972706244" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="#" aria-label="Final project folder placeholder">Final Project Folder</a></li>
+            </ul>
+        </nav>
     </header>
     
     <main>
-        <p>This is the main content area.</p>
+        <h1>Victor Mtisi</h1>
+        <div class="cards">
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/about.svg" alt="Person at desk learning web development">
+                <p>My name is Victor Mtisi. I am from Harare, Zimbabwe. Happily married to Patience and have three children namely Pilani, Vimbainashe and Thabani. I am a member of LDS Church.I am an experienced electrical technician in project management, electronic security systems.</p>
+            </section>
+            <section class="card">
+                <h2>Web Development Resources</h2>
+                <img src="images/scripture.svg" alt="Book illustration representing scripture and study resources">
+                <p>This section highlights key course resources and references, including design principles, accessible web content, and the tools used to create sites with HTML, CSS, and JavaScript.</p>
+            </section>
+        </div>
     </main>
     
     <footer>
-        <p>&copy; 2026 baphilani. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Victor Mtisi. Zimbabwe.</p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
