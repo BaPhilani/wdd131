@@ -2,9 +2,9 @@ const yearElement = document.getElementById('year');
 const modifiedElement = document.getElementById('lastModified');
 
 if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
+  yearElement.innerHTML = new Date().getFullYear();
 }
 
 if (modifiedElement) {
-  modifiedElement.textContent = `Last Modified: ${document.lastModified}`;
+  modifiedElement.innerHTML = `Last Modified: ${document.lastModified}`;
 }
