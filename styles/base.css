@@ -157,7 +157,6 @@ footer p {
     }
 
     nav a {
-    background: #ffffff26;  /* white with 15% opacity */
-    color: #ffffff;         /* white text */
-}
+        width: 100%;
+    }
 }
