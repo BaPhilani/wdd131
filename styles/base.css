@@ -110,22 +110,21 @@ main h1 {
 }
 
 .card-body {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(220px, 260px) 1fr;
     gap: 1.5rem;
-    align-items: flex-start;
+    align-items: start;
 }
 
 .card img {
-    flex: 0 0 240px;
     width: 100%;
     max-width: 260px;
     border-radius: 1rem;
+    display: block;
 }
 
 .card-text {
-    flex: 1;
-    min-width: 220px;
+    min-width: 0;
 }
 
 .card h2 {
