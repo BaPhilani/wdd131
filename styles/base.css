@@ -109,6 +109,25 @@ main h1 {
     border: 1px solid #0f172a14;
 }
 
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.card img {
+    flex: 0 0 240px;
+    width: 100%;
+    max-width: 260px;
+    border-radius: 1rem;
+}
+
+.card-text {
+    flex: 1;
+    min-width: 220px;
+}
+
 .card h2 {
     margin-top: 0;
     color: #173f6e;
@@ -158,5 +177,9 @@ footer p {
 
     nav a {
         width: 100%;
+    }
+
+    .card-body {
+        flex-direction: column;
     }
 }
