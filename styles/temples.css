@@ -11,7 +11,7 @@
     --border-softer: #0000000d;
     --shadow-soft: #00000014;
     --shadow-strong: #0000001f;
-    --transparent: #00000000;
+    --clear: #00000000;
 }
 
 * {
@@ -47,7 +47,7 @@ header > p {
 }
 
 #hamburger {
-    background: var(--transparent);
+    background: var(--clear);
     border: 2px solid var(--accent);
     color: var(--accent);
     font-size: 1.5rem;
@@ -90,7 +90,7 @@ nav a {
     text-decoration: none;
     border-radius: 4px;
     font-weight: 500;
-    border-bottom: 2px solid var(--transparent);
+    border-bottom: 2px solid var(--clear);
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
