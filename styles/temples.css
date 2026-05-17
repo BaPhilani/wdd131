@@ -7,7 +7,11 @@
     --background: #f6f4ef;
     --text: #1a1a1a;
     --text-muted: #5a5a5a;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --border-soft: #00000014;
+    --border-softer: #0000000d;
+    --shadow-soft: #00000014;
+    --shadow-strong: #0000001f;
+    --transparent: #00000000;
 }
 
 * {
@@ -43,7 +47,7 @@ header > p {
 }
 
 #hamburger {
-    background: transparent;
+    background: var(--transparent);
     border: 2px solid var(--accent);
     color: var(--accent);
     font-size: 1.5rem;
@@ -86,7 +90,7 @@ nav a {
     text-decoration: none;
     border-radius: 4px;
     font-weight: 500;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid var(--transparent);
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -123,14 +127,14 @@ figure {
     background-color: var(--surface);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px var(--shadow-soft);
+    border: 1px solid var(--border-softer);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 figure:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 14px var(--shadow-strong);
 }
 
 figure img {
