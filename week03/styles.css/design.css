@@ -1,0 +1,132 @@
+body {
+
+  font-family: 'Roboto', sans-serif; /* Use Roboto from the import or HTML link */
+
+  line-height: 1.6;
+
+  margin: 20px; /* Added margin for better spacing on the body */
+
+}
+
+header,
+
+main,
+
+footer {
+
+  max-width: 760px;
+
+  margin: 0 auto;
+
+}
+
+.banner {
+
+  padding: 1rem;
+
+  background-color: #eee;
+  margin-bottom: 1rem;
+
+}
+
+h1 {
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+/* Main content layout - incorporating our grid */
+
+main {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+
+  gap: 20px; /* Space between columns */
+
+}
+
+h2 {
+
+  color: navy; /* Original CodePen color for h2 */
+
+  text-align: center; /* Original CodePen centering */
+
+  /* We will override this for the specific h2 in the callout or main, if needed */
+
+}
+
+article p {
+
+  text-align: justify;
+
+}
+
+/* Callout styles - applying our fixes */
+
+.callout {
+
+  padding: 15px; /* Our improved padding */
+
+  margin-bottom: 20px;
+
+  border: 1px solid #ccc; /* Default border */
+
+  background-color: #f9f9f9; /* Default background */
+
+  color: #333; /* Default text color for callout */
+
+}
+
+.callout h2 {
+
+  text-align: left; /* Left-aligned heading as per your request */
+
+  margin-top: 0;
+
+  color: #333; /* Default color for heading inside callout */
+
+  /* Note: The 'navy' color from the general h2 rule will not apply here due to specificity */
+
+}
+
+/* Contrast Fix for Callout */
+
+.callout.contrast-fixed {
+
+  background-color: #e0cce4; /* New background color */
+
+  color: #4a002a; /* New foreground color */
+
+}
+
+.callout.contrast-fixed h2 {
+
+  color: #4a002a; /* Ensure heading also has good contrast */
+
+}
+
+/* Main H2 spanning across columns */
+
+main h2 {
+
+  grid-column: 1 / -1; /* Span across all columns */
+
+  /* The color and text-align properties from the general h2 rule above will apply here unless overridden */
+
+  /* If you want this specific h2 to be left-aligned, you'd add: text-align: left; */
+
+}
+
+footer {
+
+  margin-top: 1rem;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  font-size: smaller;
+
+  text-align: right;
+
+}
