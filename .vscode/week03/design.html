@@ -1,97 +1,131 @@
-<!DOCTYPE html>
+body {
 
-<html lang="en">
+  font-family: 'Roboto', sans-serif; /* Use Roboto from the import or HTML link */
 
-<head>
+  line-height: 1.6;
 
-    <meta charset="UTF-8">
+  margin: 20px; /* Added margin for better spacing on the body */
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+}
 
-    <title>WDD Design Principles</title>
+header,
 
-    <link rel="stylesheet" href="styles/design.css">
+main,
 
-</head>
+footer {
 
-<body>
+  max-width: 760px;
 
-    <!-- WDD Design Principles Start. -->
+  margin: 0 auto;
 
-    <h1>WDD Design Principles</h1>
+}
 
-    <p>This page demonstrates basic web design principles.</p>
+marquee {
 
-    <h2>Key Principles</h2>
+  padding: 1rem;
 
-    <ul>
+  background-color: #eee;
 
-        <li>Usability</li>
+}
 
-        <li>Accessibility</li>
+h1 {
 
-        <li>Visual Hierarchy</li>
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-        <li>Consistency</li>
+}
 
-    </ul>
+/* Main content layout - incorporating our grid */
 
-    <h2>Example of Visual Hierarchy</h2>
+main {
 
-    <p>Headings are larger and bolder than paragraphs to guide the reader's eye.</p>
+  display: grid;
 
-    <h2>Accessibility Considerations</h2>
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
 
-    <p>Using semantic HTML elements like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;ul&gt;</code> helps screen readers understand the content structure.</p>
+  gap: 20px; /* Space between columns */
 
-    <h2>Example Table</h2>
+}
 
-    <table>
+h2 {
 
-        <thead>
+  color: navy; /* Original CodePen color for h2 */
 
-            <tr>
+  text-align: center; /* Original CodePen centering */
 
-                <th>Element</th>
+  /* We will override this for the specific h2 in the callout or main, if needed */
 
-                <th>Purpose</th>
+}
 
-            </tr>
+article p {
 
-        </thead>
+  text-align: justify;
 
-        <tbody>
+}
 
-            <tr>
+/* Callout styles - applying our fixes */
 
-                <td><code>&lt;h1&gt;</code></td>
+.callout {
 
-                <td>Main heading</td>
+  padding: 15px; /* Our improved padding */
 
-            </tr>
+  margin-bottom: 20px;
 
-            <tr>
+  border: 1px solid #ccc; /* Default border */
 
-                <td><code>&lt;p&gt;</code></td>
+  background-color: #f9f9f9; /* Default background */
 
-                <td>Paragraph text</td>
+  color: #333; /* Default text color for callout */
 
-            </tr>
+}
 
-            <tr>
+.callout h2 {
 
-                <td><code>&lt;ul&gt;</code></td>
+  text-align: left; /* Left-aligned heading as per your request */
 
-                <td>Unordered list</td>
+  margin-top: 0;
 
-            </tr>
+  color: #333; /* Default color for heading inside callout */
 
-        </tbody>
+  /* Note: The 'navy' color from the general h2 rule will not apply here due to specificity */
 
-    </table>
+}
 
-    <!-- WDD Design Principles End. -->
+/* Contrast Fix for Callout */
 
-</body>
+.callout.contrast-fixed {
 
-</html>
+  background-color: #e0cce4; /* New background color */
+
+  color: #4a002a; /* New foreground color */
+
+}
+
+.callout.contrast-fixed h2 {
+
+  color: #4a002a; /* Ensure heading also has good contrast */
+
+}
+
+/* Main H2 spanning across columns */
+
+main h2 {
+
+  grid-column: 1 / -1; /* Span across all columns */
+
+  /* The color and text-align properties from the general h2 rule above will apply here unless overridden */
+
+  /* If you want this specific h2 to be left-aligned, you'd add: text-align: left; */
+
+}
+
+footer {
+
+  margin-top: 1rem;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  font-size: smaller;
+
+  text-align: right;
+
+}
