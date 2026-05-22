@@ -1,0 +1,44 @@
+/* Basic page/reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+/* Hero container — keeps content centered and allows responsive sizing */
+.hero {
+  max-width: 1200px;   /* optional, change as needed */
+  margin: 1rem auto;
+  /* If you prefer a fixed-height cropped hero, uncomment the next line
+     and use the object-fit example below. Otherwise let the image define height */
+  /* height: 400px; */
+  overflow: hidden; /* hides overflow when using object-fit: cover */
+}
+
+/* Recommended — keep intrinsic aspect ratio and responsive scaling */
+.hero img {
+  width: 100%;
+  height: auto; /* preserves aspect ratio using the img's width/height attrs */
+  display: block; /* removes inline gap below image */
+}
+
+/* Alternative: use object-fit cover for art-directed cropping.
+   Use this only if the .hero container has an explicit height (e.g., height: 400px). */
+.hero.object-fit img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops to fill container while preserving aspect ratio */
+  display: block;
+}
+
+/* Small responsive tweaks (optional) */
+@media (max-width: 520px) {
+  .hero {
+    margin: 0.5rem;
+  }
+}
