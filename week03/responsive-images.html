@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Images — Week 03</title>
+  <link rel="stylesheet" href="styles/responsive-images.css" />
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <picture>
+        <!-- Large image used at viewport widths >= 1000px -->
+        <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+
+        <!-- Medium image used at viewport widths >= 500px -->
+        <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+
+        <!-- Fallback/small image for narrower viewports -->
+        <img src="images/hero-small.webp"
+             alt="Temple exterior with sky and surrounding landscape"
+             width="1500" height="750">
+      </picture>
+    </div>
+  </main>
+</body>
+</html>
+```
+
+Notes:
+- The srcset values point to the three WebP files you created and placed in week03/images: hero-large.webp (1500×750), hero-medium.webp (1000×500), hero-small.webp (500×250).
+- The img element includes width="1500" and height="750" to preserve the 2:1 aspect ratio and reduce layout shift.
+- Ensure your CSS file (styles/responsive-images.css) contains appropriate rules (for example, .hero img { width: 100%; height: auto; object-fit: cover; }) so the image scales responsively.
