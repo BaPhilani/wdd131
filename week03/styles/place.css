@@ -1,72 +1,176 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Global CSS Variables */
+
+:root {
+
+    --primary-color: #006400; /* Dark Green, inspired by lush Zimbabwean landscapes */
+
+    --secondary-color: #ffffff; /* White for contrast */
+
+    --background-color: #f4f4f4; /* Light grey for content sections */
+
+    --text-color: #333; /* Dark text for readability */
+
+    --font-primary: 'Georgia', serif; /* A classic, readable font */
+
+    --font-secondary: 'Verdana', sans-serif; /* A clean sans-serif */
+
 }
+
+/* Universal Box-Sizing */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+/* Body Styling */
 
 body {
-    font-family: Arial, sans-serif;
+
+    font-family: var(--font-secondary);
+
     line-height: 1.6;
+
+    color: var(--text-color);
+
+    background-color: var(--background-color); /* Applied to body for overall page background */
+
 }
+
+/* Header Styling */
 
 header {
-    background-color: #006400;
-    color: white;
+
+    background-color: var(--primary-color);
+
+    color: var(--secondary-color);
+
     text-align: center;
-    padding: 1rem;
+
+    padding: 1.5rem 1rem; /* Slightly more padding for better visual hierarchy */
+
+    font-family: var(--font-primary); /* Using a different font for the header */
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+
 }
+
+/* Hero Section Styling */
 
 .hero img {
+
     width: 100%;
+
     height: auto;
-    display: block;
+
+    display: block; /* Removes extra space below the image */
+
 }
+
+/* Main Content Layout */
 
 main {
+
     display: grid;
-    gap: 1rem;
-    padding: 1rem;
+
+    gap: 1.5rem; /* Increased gap for better spacing */
+
+    padding: 1.5rem; /* Increased padding */
+
+    max-width: 1200px; /* Constrain content width on larger screens */
+
+    margin: 0 auto; /* Center the main content */
+
 }
+
+/* Data and Weather Section Styling */
 
 .data,
+
 .weather {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 10px;
+
+    background-color: var(--secondary-color); /* White background for content blocks */
+
+    padding: 1.5rem;
+
+    border-radius: 15px; /* More rounded corners */
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); /* Soft shadow for definition */
+
+    display: flex; /* Use flexbox for internal alignment */
+
+    flex-direction: column; /* Stack items vertically */
+
+    align-items: center; /* Center content horizontally within sections */
+
+    text-align: center; /* Center text within these blocks */
+
 }
+
+.data h2,
+
+.weather h2 {
+
+    font-family: var(--font-primary);
+
+    color: var(--primary-color);
+
+    margin-bottom: 1rem;
+
+}
+
+/* Weather Icon Styling */
 
 .weather-icon {
-    display: none;
+
+    display: inline-block; /* Changed from none to inline-block */
+
+    width: 60px; /* Slightly larger default size */
+
+    height: 60px;
+
+    margin: 0 0.5rem; /* Spacing around the icon */
+
+    vertical-align: middle; /* Align nicely with text */
+
 }
+
+/* Mobile Weather Icon - Initially hidden */
 
 .mobile-weather-icon {
-    width: 50px;
+
+    display: none; /* Hidden by default */
+
+    width: 40px; /* Smaller size for mobile */
+
+    height: 40px;
+
 }
 
-/* Wider View */
-@media screen and (min-width: 768px) {
+/* Pseudo-element for the large view weather icon */
 
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
+.weather h2::after {
 
-    .hero {
-        grid-column: 1 / 3;
-    }
+    content: '';
 
-    .weather-icon {
-        display: inline;
-    }
+    display: inline-block;
 
-    .mobile-weather-icon {
-        display: none;
-    }
-}
+    background-image: url('path/to/your/weather-icon.svg'); /* * IMPORTANT: Replace with the actual path to your weather icon * */
 
-footer {
-    background-color: #006400;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+    width: 50px; /* Adjust size as needed */
+
+    height: 50px; /* Adjust size as needed */
+
+    margin-left: 10px; /* Space between heading and icon */
+
+    vertical-align: middle; /* Align nicely with text */
 }
