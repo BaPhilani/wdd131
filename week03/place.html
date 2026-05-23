@@ -74,5 +74,52 @@
         <p id="lastModified"></p>
     </footer>
 
+    /* First, let's define some colors inspired by Zimbabwe.
+
+   Zimbabwe's flag has Green, Yellow, Red, and Black.
+
+   We can use these for a vibrant feel! */
+
+:root {
+
+    /* ... (your existing CSS variables) ... */
+
+    --zimbabwe-green: #006400; /* Dark Green */
+
+    --zimbabwe-yellow: #FFD700; /* Gold/Yellow */
+
+    --zimbabwe-red: #DC143C;   /* Crimson Red */
+
+    --zimbabwe-black: #000000; /* Black */
+
+    --footer-text-color: #ffffff; /* White text for contrast on dark backgrounds */
+
+}
+
+footer {
+
+    /* Use a combination of colors for a more dynamic look, or pick one! */
+
+    /* Option 1: Classic Green Footer */
+
+    background-color: var(--zimbabwe-green);
+
+    /* Option 2: A bit more flair with a gradient (optional, can be complex) */
+
+    /* background: linear-gradient(to right, var(--zimbabwe-green), var(--zimbabwe-yellow)); */
+
+    color: var(--footer-text-color); /* White text */
+
+    text-align: center;
+
+    padding: 1.5rem 1rem; /* Generous padding */
+
+    margin-top: 2rem; /* Add some space above the footer */
+
+    font-size: 0.9rem; /* Slightly smaller text for the footer */
+
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle top shadow */
+}
+
 </body>
 </html>
