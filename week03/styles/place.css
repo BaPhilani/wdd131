@@ -174,3 +174,18 @@ main {
 
     vertical-align: middle; /* Align nicely with text */
 }
+.footer {
+    background: linear-gradient(
+        to right,
+        green,
+        gold,
+        red,
+        black
+    );
+
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
