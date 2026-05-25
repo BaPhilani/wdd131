@@ -21,4 +21,5 @@ function calculateWindChill(temp, speed) {
 const windChill =
 calculateWindChill(temperature, windSpeed);
 
-document.getElementById("windchill").textContent = `${windChill}°C`;
+document.getElementById("windchill").textContent =
+`${windChill}°C`;
