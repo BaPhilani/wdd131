@@ -1,4 +1,4 @@
-/* Global CSS Variables */
+;/* Global CSS Variables */
 
 :root {
 
@@ -174,7 +174,7 @@ main {
 
     vertical-align: middle; /* Align nicely with text */
 }
-.footer {
+footer {
     background: linear-gradient(
         to right,
         green,
@@ -191,6 +191,39 @@ main {
 }
 #lastModified {
     margin-top: 0.5rem;
-    font-size: 0.9rem
+    font-size: 0.9rem;
+
+}
+
+/* Responsive Design for Wider Screens */
+
+@media screen and (min-width: 768px) {
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .hero {
+        grid-column: 1 / 3;
+    }
+
+    .weather {
+        position: relative;
+    }
+
+    /* Show emoji weather icon in wider view */
+    .weather h2::after {
+        content: " ⛅";
+        background-image: none;
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+    }
+
+    /* Hide SVG icon in wider view */
+    .mobile-weather-icon {
+        display: none;
+    }
 
 }
