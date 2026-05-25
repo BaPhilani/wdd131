@@ -1,11 +1,11 @@
 document.getElementById("year").textContent =
-new Date().getFullYear();
+new Date().getFullYear()
 
 document.getElementById("lastModified").textContent =
 `Last Modified: ${document.lastModified}`;
 
 // Wind Chill Calculation
-const temperature = 25;
+const temperature = 24;
 const windSpeed = 10;
 
 function calculateWindChill(temp, speed) {
