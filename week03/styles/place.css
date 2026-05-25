@@ -56,7 +56,7 @@ header {
 
     font-family: var(--font-primary); /* Using a different font for the header */
 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.8); /* Subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.0); /* Subtle shadow for depth */
 
 }
 
