@@ -154,26 +154,7 @@ main {
 
 /* Pseudo-element for the large view weather icon */
 
-.weather h2::after {
 
-    content: '';
-
-    display: inline-block;
-
-    background-image: url('week03/images/weather-icon.svg'); /* * IMPORTANT: Replace with the actual path to your weather icon * */
-
-    background-size: contain;
-
-    background-repeat: no-repeat;
-
-    width: 50px; /* Adjust size as needed */
-
-    height: 50px; /* Adjust size as needed */
-
-    margin-left: 10px; /* Space between heading and icon */
-
-    vertical-align: middle; /* Align nicely with text */
-}
 footer {
     background: linear-gradient(
         to right,
