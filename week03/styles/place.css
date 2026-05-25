@@ -175,7 +175,7 @@ main {
     vertical-align: middle; /* Align nicely with text */
 }
 .footer {
-    background-color: linear-gradient(
+    background: linear-gradient(
         to right,
         green,
         gold,
@@ -183,7 +183,7 @@ main {
         black
     );
 
-    color: green;
+    color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
