@@ -160,7 +160,7 @@ main {
 
     display: inline-block;
 
-    background-image: url('path/to/your/weather-icon.svg'); /* * IMPORTANT: Replace with the actual path to your weather icon * */
+    background-image: url('week03/images/weather-icon.svg'); /* * IMPORTANT: Replace with the actual path to your weather icon * */
 
     background-size: contain;
 
