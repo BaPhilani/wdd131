@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Build</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            text-align: center;
+            background-color: white;
+        }
+
+        caption {
+            caption-side: bottom;
+            padding: 10px;
+            font-size: 0.9rem;
+            color: gray;
+        }
+
+        thead {
+            background-color: #222;
+            color: white;
+        }
+
+        thead th {
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+
+        tbody th {
+            text-align: left;
+            padding-left: 15px;
+            background-color: #eee;
+        }
+
+        td, th {
+            border: 1px solid #ccc;
+            padding: 12px;
+        }
+
+        /* Zebra striping */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .check {
+            color: blue;
+            font-size: 1.5rem;
+        }
+
+        .cross {
+            color: red;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Table 1: Account Feature Comparison</caption>
+
+        <thead>
+            <tr>
+                <th colspan="4">ACME Wildwest Services</th>
+            </tr>
+
+            <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Premium</th>
+                <th>Deluxe</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Feature 1</th>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+            </tr>
+
+            <tr>
+                <th>Feature 2</th>
+                <td class="cross">✘</td>
+                <td class="check">✔️</td>
+                <td class="check">✔️</td>
+            </tr>
+
+            <tr>
+                <th>Feature 3</th>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔️</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
