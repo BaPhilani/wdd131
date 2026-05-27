@@ -1,0 +1,54 @@
+/* Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Main Layout */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 30px;
+}
+
+/* Images */
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+
+    /* Fade animation */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-from-black animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+}
