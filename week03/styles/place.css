@@ -8,11 +8,14 @@
 
     --background-color: #f4f4f4; /* Light grey for content sections */
 
-    --text-color: #333; /* Dark text for readability */
+    --text-color: #333333; /* Dark green for readability */
 
-    --font-primary: 'Georgia', serif; /* A classic, readable font */
+    --shadow-color: rgba(0,0,0,0,08);
 
-    --font-secondary: 'Verdana', sans-serif; /* A clean sans-serif */
+    --green: #008000;
+    --gold: #ffd700;
+    --red: #ff0000;
+    --black: #000000;
 
 }
 
