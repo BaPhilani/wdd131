@@ -5,7 +5,7 @@ document.getElementById("lastModified").textContent =
 `Last Modified: ${document.lastModified}`;
 
 // Wind Chill Calculation
-const temperature = 24;
+const temperature = 5;
 const windSpeed = 10;
 
 function calculateWindChill(temp, speed) {
@@ -17,8 +17,10 @@ function calculateWindChill(temp, speed) {
     ).toFixed(1);
 }
 
-const windChill =
-calculateWindChill(temperature, windSpeed);
+let windchill = "N/A";
+if (temperature <= 10 && windSpeed > 4.8) {
+    windchill = calculateWindChill(temperature, windSpeed);
+}
 
 document.getElementById("windchill").textContent =
-`${windChill}°C`;
+`${windchill}°C`;
