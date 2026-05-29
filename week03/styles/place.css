@@ -168,13 +168,7 @@ main {
 
 
 footer {
-    background: linear-gradient(
-        to right,
-        var(--green),
-        var(--gold),
-        var(--red),
-        var(--black)
-    );
+    background-color: var(--primary-color);
 
     color: var(--secondary-color);
     text-align: center;
