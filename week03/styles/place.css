@@ -161,32 +161,6 @@ main {
     }
 }
 
-.desktop-weather-icon {
-
-    display: none; /* Changed from none to inline-block */
-
-    width: 60px; /* Slightly larger default size */
-
-    height: 60px;
-
-    margin: 0 0.5rem; /* Spacing around the icon */
-
-    vertical-align: middle; /* Align nicely with text */
-
-}
-
-/* Mobile Weather Icon - Initially hidden */
-
-.mobile-weather-icon {
-
-    display: none; /* Hidden by default */
-
-    width: 40px; /* Smaller size for mobile */
-
-    height: 40px;
-
-}
-
 /* Pseudo-element for the large view weather icon */
 
 
