@@ -17,10 +17,10 @@ function calculateWindChill(temp, speed) {
     ).toFixed(1);
 }
 
-let windchill = "N/A";
+let windChillDisplay = "N/A";
 if (temperature <= 10 && windSpeed > 4.8) {
-    windchill = calculateWindChill(temperature, windSpeed);
+    windChillDisplay = calculateWindChill(temperature, windSpeed);
 }
 
 document.getElementById("windchill").textContent =
-`${windchill}°C`;
+`${windChillDisplay}°C`;
