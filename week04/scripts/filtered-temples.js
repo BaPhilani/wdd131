@@ -61,6 +61,13 @@ const temples = [
         dedicated: "1893, April, 6",
         area: 115000,
         imageUrl: "images/salt_lake_temple.jpeg"
+    },
+    {
+        templeName: "Accra Ghana",
+        location: "Accra, Ghana",
+        dedicated: "2004, November, 20",
+        area: 10700,
+        imageUrl: "images/accra_ghana_temple.jpeg"
     }
 ];
 
