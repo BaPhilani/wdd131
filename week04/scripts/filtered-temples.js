@@ -32,7 +32,7 @@ const temples = [
         location: "Copenhagen, Denmark",
         dedicated: "1994, May, 22",
         area: 38800,
-        imageUrl: "images/placeholder.svg"
+        imageUrl: "week04/images/placeholder.svg"
     },
     {
         templeName: "Johannesburg South Africa",
