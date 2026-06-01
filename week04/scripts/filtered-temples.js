@@ -1,19 +1,5 @@
 const temples = [
     {
-        templeName: "Accra Ghana",
-        location: "Accra, Ghana",
-        dedicated: "2004, August, 21",
-        area: 9200,
-        imageUrl: "images/accra_ghana_temple.jpeg"
-    },
-    {
-        templeName: "Adelaide Australia",
-        location: "Adelaide, Australia",
-        dedicated: "2000, April, 13",
-        area: 36200,
-        imageUrl: "images/adelaide_australia_temple.jpeg"
-    },
-    {
         templeName: "Belem Brazil",
         location: "Belém, Brazil",
         dedicated: "2000, May, 20",
@@ -46,7 +32,7 @@ const temples = [
         location: "Copenhagen, Denmark",
         dedicated: "1994, May, 22",
         area: 38800,
-        imageUrl: "week04/images/placeholder.svg"
+        imageUrl: "images/placeholder.svg"
     },
     {
         templeName: "Johannesburg South Africa",
