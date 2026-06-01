@@ -42,6 +42,13 @@ const temples = [
         imageUrl: "images/harare_zimbabwe_temple.jpg"
     },
     {
+        templeName: "London England",
+        location: "London, England",
+        dedicated: "1958, October, 16",
+        area: 91500,
+        imageUrl: "week04/images/placeholder.svg"
+    },
+    {
         templeName: "Johannesburg South Africa",
         location: "Johannesburg, South Africa",
         dedicated: "1985, April, 24",
