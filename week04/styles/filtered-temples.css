@@ -7,7 +7,6 @@
     --background: #f6f4ef;
     --text: #1a1a1a;
     --text-muted: #5a5a5a;
-    --border-soft: #00000014;
     --border-softer: #0000000d;
     --shadow-soft: #00000014;
     --shadow-strong: #0000001f;
@@ -41,17 +40,26 @@ header {
     gap: 0.75rem;
 }
 
+header > p,
+.page-intro h1 {
+    font-family: "Poppins", "Inter", sans-serif;
+    font-weight: 700;
+}
+
 header > p {
     margin: 0;
-    font-family: "Poppins", "Inter", sans-serif;
     font-size: 1.5rem;
-    font-weight: 700;
     letter-spacing: 0.5px;
     color: var(--accent);
 }
 
+#hamburger,
+nav a {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
 #hamburger {
-    background: var(--clear);
+    background-color: var(--clear);
     border: 2px solid var(--accent);
     color: var(--accent);
     font-size: 1.5rem;
@@ -59,14 +67,15 @@ header > p {
     padding: 0.4rem 0.75rem;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 #hamburger:hover,
-#hamburger:focus {
+#hamburger:focus,
+nav a:hover,
+nav a:focus,
+nav a.is-active {
     background-color: var(--accent);
     color: var(--primary-dark);
-    outline: none;
 }
 
 nav {
@@ -94,15 +103,7 @@ nav a {
     text-decoration: none;
     border-radius: 8px;
     font-weight: 600;
-    background: transparent;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-nav a:hover,
-nav a:focus,
-nav a.is-active {
-    background-color: var(--accent);
-    color: var(--primary-dark);
+    background-color: var(--clear);
 }
 
 main {
@@ -113,27 +114,40 @@ main {
     gap: 1.5rem;
 }
 
-.page-intro {
+.page-intro,
+.temple-card,
+.message {
     background-color: var(--surface);
-    border-radius: 16px;
-    padding: 1.5rem 1.5rem 1.25rem;
     border: 1px solid var(--border-softer);
-    box-shadow: 0 4px 14px var(--shadow-soft);
+}
+
+.page-intro,
+.message,
+footer {
     text-align: center;
 }
 
+.page-intro {
+    border-radius: 16px;
+    padding: 1.5rem 1.5rem 1.25rem;
+    box-shadow: 0 4px 14px var(--shadow-soft);
+}
+
 .page-intro h1 {
-    font-family: "Poppins", "Inter", sans-serif;
     font-size: clamp(1.9rem, 3vw, 2.6rem);
     margin: 0 0 0.75rem;
     color: var(--primary);
 }
 
-.page-intro p {
+.page-intro p,
+.message {
     margin: 0;
     color: var(--text-muted);
-    font-size: 1rem;
     line-height: 1.75;
+}
+
+.page-intro p {
+    font-size: 1rem;
 }
 
 .temple-grid {
@@ -143,8 +157,6 @@ main {
 }
 
 .temple-card {
-    background-color: var(--surface);
-    border: 1px solid var(--border-softer);
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 6px 20px var(--shadow-soft);
@@ -188,20 +200,14 @@ main {
 }
 
 .message {
-    margin: 0;
-    padding: 1rem 1rem;
+    padding: 1rem;
     grid-column: 1 / -1;
-    text-align: center;
-    color: var(--text-muted);
-    background-color: var(--surface);
-    border: 1px solid var(--border-softer);
     border-radius: 12px;
 }
 
 footer {
     background-color: var(--primary-dark);
     color: var(--accent-light);
-    text-align: center;
     padding: 1.25rem 1rem;
 }
 
