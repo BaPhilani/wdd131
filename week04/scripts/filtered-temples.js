@@ -53,28 +53,28 @@ const temples = [
         location: "Rome, Italy",
         dedicated: "2019, December, 10",
         area: 58352,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-exterior-1050943-wallpaper.jpg"
+        imageUrl: "week04/images/placeholder.svg"
     },
     {
         templeName: "Kirtland Ohio",
         location: "Kirtland, Ohio, United States",
         dedicated: "1836, March, 27",
         area: 9580,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kirtland-ohio/400x250/kirtland-ohio-temple-exterior-270990-wallpaper.jpg"
+        imageUrl: "week04/images/placeholder.svg"
     },
     {
         templeName: "Winter Quarters Nebraska",
         location: "Florence, Nebraska, United States",
         dedicated: "2001, April, 22",
         area: 107900,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/winter-quarters/400x250/winter-quarters-temple-1416672-wallpaper.jpg"
+        imageUrl: "week04/images/placeholder.svg"
     },
     {
         templeName: "São Paulo Brazil",
         location: "São Paulo, Brazil",
         dedicated: "1978, October, 28",
         area: 82900,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/400x250/sao-paulo-brazil-temple-1432195-wallpaper.jpg"
+        imageUrl: "week04/images/placeholder.svg"
     }
 ];
 
