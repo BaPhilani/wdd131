@@ -198,8 +198,12 @@ navLinks.forEach((link) => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-    renderTemples(temples);
+    if (templeContainer) {
+        renderTemples(temples);
+    }
     if (lastModified) {
         lastModified.textContent = `Last modified: ${new Date(document.lastModified).toLocaleDateString()}`;
     }
+    // Ensure the Home filter is visually active on load
+    setActiveFilter('home');
 });
