@@ -84,6 +84,7 @@ const navLinks = document.querySelectorAll('#primary-nav a[data-filter]');
 const templeContainer = document.getElementById('temple-container');
 const message = document.getElementById('message');
 const lastModified = document.getElementById('lastModified');
+const fallbackImageUrl = 'week04/images/placeholder.svg';
 
 function getYear(dedicated) {
     const year = Number(dedicated.split(',')[0].trim());
@@ -101,13 +102,17 @@ function createTempleCard(temple) {
     article.className = 'temple-card';
 
     const img = document.createElement('img');
-    img.src = temple.imageUrl;
+    img.src = temple.imageUrl || fallbackImageUrl;
     img.alt = `${temple.templeName} temple`;
     img.loading = 'lazy';
+    img.decoding = 'async';
     // Fallback image if the remote URL fails to load — use local SVG placeholder
     img.addEventListener('error', () => {
-        img.src = 'week04/images/placeholder.svg';
-        img.style.objectFit = 'contain';
+        if (img.src !== fallbackImageUrl) {
+            img.src = fallbackImageUrl;
+            img.alt = `${temple.templeName} image unavailable`;
+            img.style.objectFit = 'contain';
+        }
     });
     article.appendChild(img);
 
