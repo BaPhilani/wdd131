@@ -104,9 +104,9 @@ function createTempleCard(temple) {
     img.src = temple.imageUrl;
     img.alt = `${temple.templeName} temple`;
     img.loading = 'lazy';
-    // Fallback image if the remote URL fails to load
+    // Fallback image if the remote URL fails to load — use local SVG placeholder
     img.addEventListener('error', () => {
-        img.src = createPlaceholderSVG(temple.templeName);
+        img.src = 'week04/images/placeholder.svg';
         img.style.objectFit = 'contain';
     });
     article.appendChild(img);
@@ -134,14 +134,7 @@ function createTempleCard(temple) {
     return article;
 }
 
-function createPlaceholderSVG(label) {
-        const svg = `
-        <svg xmlns='http://www.w3.org/2000/svg' width='800' height='450'>
-            <rect width='100%' height='100%' fill='%23f4ead5'/>
-            <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23c9a35b' font-family='Inter, Poppins, sans-serif' font-size='32'>${label}</text>
-        </svg>`;
-        return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
-}
+// Removed data-URI placeholder; using local SVG file instead to avoid browser issues.
 
 function renderTemples(list) {
     templeContainer.innerHTML = '';
