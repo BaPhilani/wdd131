@@ -37,15 +37,15 @@ const temples = [
     {
         templeName: "Harare Zimbabwe",
         location: "Harare, Zimbabwe",
-        dedicated: "1999, June, 18",
+        dedicated: "2026, March, 1",
         area: 7600,
         imageUrl: "images/harare_zimbabwe_temple.jpg"
     },
     {
-        templeName: "London England",
-        location: "London, England",
-        dedicated: "1958, October, 16",
-        area: 91500,
+        templeName: "Copenhagen Denmark",
+        location: "Copenhagen, Denmark",
+        dedicated: "1994, May, 22",
+        area: 38800,
         imageUrl: "week04/images/placeholder.svg"
     },
     {
