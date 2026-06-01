@@ -28,11 +28,11 @@ const temples = [
         imageUrl: "images/harare_zimbabwe_temple.jpg"
     },
     {
-        templeName: "Copenhagen Denmark",
-        location: "Copenhagen, Denmark",
-        dedicated: "1994, May, 22",
-        area: 38800,
-        imageUrl: "week04/images/placeholder.svg"
+        templeName: "Adelaide Australia",
+        location: "Adelaide, Australia",
+        dedicated: "2000, April, 13",
+        area: 36200,
+        imageUrl: "images/adelaide_australia_temple.jpeg"
     },
     {
         templeName: "Johannesburg South Africa",
