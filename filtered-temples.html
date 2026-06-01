@@ -1,18 +1,16 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album – Victor Mtisi</title>
-    <meta name="description" content="WDD 131 Temple Album page by Victor Mtisi showing a mobile-first gallery of temple images and captions.">
+    <title>Temple Gallery – Victor Mtisi</title>
+    <meta name="description" content="A responsive temple gallery with native lazy loading and filter controls.">
     <meta name="author" content="Victor Mtisi">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="week04/styles/filtered-temples.css">
+    <script src="week04/scripts/filtered-temples.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,6 +18,26 @@
         <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
         <nav>
             <ul id="primary-nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#old">Old</a></li>
-                <li><a href="#new">New</a></li>
+                <li><a href="#home" data-filter="home" class="nav-link is-active">Home</a></li>
+                <li><a href="#old" data-filter="old" class="nav-link">Old</a></li>
+                <li><a href="#new" data-filter="new" class="nav-link">New</a></li>
+                <li><a href="#large" data-filter="large" class="nav-link">Large</a></li>
+                <li><a href="#small" data-filter="small" class="nav-link">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-intro">
+            <h1>Temple Gallery</h1>
+            <p>Use the filters to show temples built before 1900, after 2000, larger than 90,000 sq ft, smaller than 10,000 sq ft, or all temples.</p>
+        </section>
+        <section id="temple-container" class="temple-grid">
+            <p id="message" class="message">Loading temples…</p>
+        </section>
+    </main>
+    <footer>
+        <p>Temple gallery built with native lazy loading and dynamic filtering.</p>
+        <p id="lastModified">Last modified: </p>
+    </footer>
+</body>
+</html>
