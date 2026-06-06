@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
+<meta name="author" content="Victor Mtisi">
 
 <!-- This start file was build by Paul Cheney  -->
 <title>HTML5 Start Site by Paul Cheney</title>
@@ -48,16 +48,111 @@
 <!-- CONTENT HERE -->
 <main>
     <h1>Course Proposal Application</h1>
-        
 
-          
-        
-    </main>
-    
+    <section aria-labelledby="proposalHeading">
+      <h2 id="proposalHeading">Submit a Course Proposal</h2>
+
+      <div id="form-messages" role="status" aria-live="polite" class="sr-only"></div>
+
+      <form id="proposalForm" action="#" method="post" novalidate>
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
+          <input id="fullname" name="fullname" type="text" required minlength="2" placeholder="Jane Doe">
+
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" required placeholder="name@example.com">
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" pattern="\+?[0-9\-\s]{7,20}" placeholder="+263 77 123 4567">
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Proposal Details</legend>
+
+          <label for="courseTitle">Course Title <span aria-hidden="true">*</span></label>
+          <input id="courseTitle" name="courseTitle" type="text" required minlength="5" placeholder="e.g., Intro to Solar Installations">
+
+          <label for="description">Course Description <span aria-hidden="true">*</span></label>
+          <textarea id="description" name="description" rows="5" required minlength="30" placeholder="Brief summary of the course, learning outcomes, and audience."></textarea>
+
+          <label for="startDate">Preferred Start Date</label>
+          <input id="startDate" name="startDate" type="date">
+
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">-- Select a category --</option>
+            <option>Solar Energy</option>
+            <option>Security Systems</option>
+            <option>Electrical Installations</option>
+            <option>Project Management</option>
+          </select>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Experience & Agreement</legend>
+
+          <p>Experience Level</p>
+          <label><input type="radio" name="level" value="beginner" checked> Beginner</label>
+          <label><input type="radio" name="level" value="intermediate"> Intermediate</label>
+          <label><input type="radio" name="level" value="advanced"> Advanced</label>
+
+          <label for="terms" class="checkbox"><input id="terms" name="terms" type="checkbox" required> I agree to be contacted regarding this proposal. <span aria-hidden="true">*</span></label>
+
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit">Submit Proposal</button>
+          <button type="reset">Reset</button>
+        </div>
+
+        <p class="note">Fields marked with <span aria-hidden="true">*</span> are required.</p>
+      </form>
+
+    </section>
+
+</main>
+
 <!-- FOOTER HERE -->   
     <footer>
-        &copy; 2024 &bull; Paul Cheney &bull; 123-555-6789
+        &copy; 2026 &bull; Victor Mtisi &bull; +263772886931<br>
+        Contact: Pilani Mtisi &bull; pilanimtisi@gmail.com &bull; +263775272974
     </footer>
 <script src="js/scripts.js"></script>
+
+<style>
+  .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+  .form-actions { margin-top:1rem; }
+  .form-actions button { margin-right: .5rem; padding:.5rem 1rem; border:none; background: #003566; color: white; border-radius:6px; cursor:pointer; }
+  .form-actions button[type="reset"]{ background: #777; }
+  .note{ font-size: .9rem; color:#333; margin-top:.75rem; }
+  #form-messages{ margin-bottom:1rem; padding:.5rem 1rem; border-radius:6px; background:#e6ffed; color:#0b6623; }
+</style>
+
+<script>
+  (function(){
+    var form = document.getElementById('proposalForm');
+    var msg = document.getElementById('form-messages');
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      if(!form.checkValidity()){
+        e.preventDefault();
+        form.reportValidity();
+        var first = form.querySelector(':invalid');
+        if(first) first.focus();
+        return;
+      }
+      e.preventDefault();
+      msg.classList.remove('sr-only');
+      msg.textContent = 'Thank you — your proposal has been received. We will contact you shortly.';
+      form.reset();
+      setTimeout(function(){ msg.classList.add('sr-only'); msg.textContent = ''; }, 6000);
+    });
+  })();
+</script>
 </body>
 </html>
