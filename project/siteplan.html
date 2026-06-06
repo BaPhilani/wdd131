@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAVI Projects Site Plan</title>
+  <style>
+    :root {
+      --primary-color: #C1121F;
+      --secondary-color: #003566;
+      --neutral-color: #FFFFFF;
+      --accent-color: #F2F4F8;
+      --text-color: #111111;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      color: var(--text-color);
+      background-color: var(--neutral-color);
+      line-height: 1.6;
+    }
+
+    header,
+    section,
+    footer {
+      padding: 1.5rem 1.25rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: var(--secondary-color);
+      color: var(--neutral-color);
+      border-bottom: 4px solid var(--primary-color);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      background-color: var(--neutral-color);
+      color: var(--primary-color);
+      font-size: 1.75rem;
+      font-weight: 700;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    }
+
+    h1 {
+      color: var(--neutral-color);
+      font-size: clamp(2rem, 3vw, 3rem);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      color: var(--secondary-color);
+      font-size: 1.35rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .section-block {
+      background-color: var(--accent-color);
+      border-radius: 14px;
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    ul {
+      margin: 0.5rem 0 0.5rem 1.25rem;
+      padding: 0;
+    }
+
+    .wireframe {
+      background-color: #FFFFFF;
+      border: 1px dashed var(--secondary-color);
+      padding: 1rem;
+      border-radius: 12px;
+      white-space: pre-wrap;
+      font-family: monospace;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+    }
+
+    .detail-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    footer {
+      background-color: var(--secondary-color);
+      color: var(--neutral-color);
+      text-align: center;
+      border-top: 4px solid var(--primary-color);
+    }
+
+    @media (min-width: 720px) {
+      .detail-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-label="PAVI Projects logo">PV</div>
+      <div>
+        <h1>PAVI Projects Site Plan</h1>
+        <p>Planning document for the PAVI Projects website, including structure, visuals, and content strategy.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block">
+      <h2>Site Name</h2>
+      <h3>PAVI Projects</h3>
+      <p><strong>Logo:</strong> PV</p>
+      <p><strong>Description:</strong> PAVI Projects is a project management and technical services company specializing in security systems, solar energy solutions, electrical installations, and estates management. The name was chosen because it represents a professional organization focused on delivering innovative, reliable, and customer-centered project solutions.</p>
+      <p><strong>Optional Domain Name:</strong> paviprojects.co.zw</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Site Purpose</h2>
+      <p>The PAVI Projects website will serve as a digital marketing and customer engagement platform that showcases the company's products and services.</p>
+      <p>The website will:</p>
+      <ul>
+        <li>Promote PAVI Projects' services and completed projects.</li>
+        <li>Provide detailed information about products and services.</li>
+        <li>Allow customers to request quotations online.</li>
+        <li>Enable customers to submit inquiries and feedback.</li>
+        <li>Provide contact information and communication channels.</li>
+        <li>Create awareness of modern security, electrical, and renewable energy solutions.</li>
+      </ul>
+      <h3>Services Offered</h3>
+      <ul>
+        <li>Project Management</li>
+        <li>Estates Management</li>
+        <li>Solar Energy Solutions</li>
+        <li>CCTV Surveillance Systems</li>
+        <li>Intruder Alarm Systems</li>
+        <li>Electric Fence Systems</li>
+        <li>Access Control Systems</li>
+        <li>Electrical Installations</li>
+        <li>Electrical Repairs and Maintenance</li>
+        <li>Electric Gate Automation</li>
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <h2>Scenarios</h2>
+      <h3>Scenario 1</h3>
+      <p>I need a solar power system for my home. How can PAVI Projects help me determine the correct system size and provide a quotation?</p>
+      <h3>Scenario 2</h3>
+      <p>What security solutions does PAVI Projects offer for residential and commercial properties?</p>
+      <h3>Scenario 3</h3>
+      <p>How can I request a quotation for CCTV, electric fencing, or gate automation services?</p>
+      <h3>Scenario 4</h3>
+      <p>Can I view customer reviews and completed project examples before making a decision?</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Color Schema</h2>
+      <div class="detail-list">
+        <div>
+          <h3>Primary Color: Red (#C1121F)</h3>
+          <p><strong>Usage:</strong></p>
+          <ul>
+            <li>Main headings</li>
+            <li>Buttons</li>
+            <li>Call-to-action sections</li>
+            <li>Logo accents</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Secondary Color: Blue (#003566)</h3>
+          <p><strong>Usage:</strong></p>
+          <ul>
+            <li>Navigation menu</li>
+            <li>Footer background</li>
+            <li>Section headings</li>
+            <li>Links</li>
+          </ul>
+        </div>
+      </div>
+      <div class="detail-list">
+        <div>
+          <h3>Neutral Color: White (#FFFFFF)</h3>
+          <p><strong>Usage:</strong></p>
+          <ul>
+            <li>Page background</li>
+            <li>Content sections</li>
+            <li>Text contrast</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Accent Color: Light Gray (#F2F4F8)</h3>
+          <p><strong>Usage:</strong></p>
+          <ul>
+            <li>Content cards and panels</li>
+            <li>Section backgrounds</li>
+            <li>Visual separation between sections</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Typography</h2>
+      <h3>Font 1: Montserrat</h3>
+      <p><strong>Used For:</strong> Main headings (H1, H2, H3), navigation menu, buttons.</p>
+      <h3>Font 2: Roboto</h3>
+      <p><strong>Used For:</strong> Body text, paragraphs, forms, product descriptions.</p>
+      <h3>Font 3: Open Sans</h3>
+      <p><strong>Used For:</strong> Customer testimonials, captions, supporting content.</p>
+      <p>Google Fonts used: Montserrat, Roboto.</p>
+    </section>
+
+    <section class="section-block">
+      <h2>Wireframes</h2>
+      <h3>Mobile View</h3>
+      <div class="wireframe">
+--------------------------------
+|         LOGO (PV)           |
+|      PAVI PROJECTS          |
+--------------------------------
+|       Navigation Menu       |
+--------------------------------
+|       Hero Image            |
+| "Professional Project       |
+|  Solutions"                 |
+--------------------------------
+|      About Us Section       |
+--------------------------------
+|      Services Section       |
+|  - Solar                    |
+|  - CCTV                     |
+|  - Electrical               |
+|  - Access Control           |
+--------------------------------
+|    Customer Testimonials    |
+--------------------------------
+|    Quotation Request Form   |
+--------------------------------
+|       Contact Details       |
+--------------------------------
+|          Footer             |
+--------------------------------
+      </div>
+      <h3>Desktop View</h3>
+      <div class="wireframe">
+---------------------------------------------------------
+| LOGO (PV) | HOME | SERVICES | PROJECTS | CONTACT |
+---------------------------------------------------------
+|                                                   |
+|                 HERO BANNER                       |
+|       Professional Project Solutions              |
+|                                                   |
+---------------------------------------------------------
+|                  ABOUT PAVI PROJECTS              |
+---------------------------------------------------------
+| SERVICE 1 | SERVICE 2 | SERVICE 3 | SERVICE 4     |
+---------------------------------------------------------
+|                  FEATURED PROJECTS                |
+---------------------------------------------------------
+|             CUSTOMER TESTIMONIALS                 |
+---------------------------------------------------------
+|             QUOTATION REQUEST FORM                |
+---------------------------------------------------------
+|              CONTACT INFORMATION                  |
+---------------------------------------------------------
+|                     FOOTER                        |
+---------------------------------------------------------
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Content Features</h2>
+      <p><strong>Home Page</strong></p>
+      <ul>
+        <li>Company introduction</li>
+        <li>Hero image/banner</li>
+        <li>Service highlights</li>
+      </ul>
+      <p><strong>Services Page</strong></p>
+      <ul>
+        <li>Detailed service descriptions</li>
+        <li>Product images</li>
+        <li>Benefits and features</li>
+      </ul>
+      <p><strong>Projects Page</strong></p>
+      <ul>
+        <li>Completed project gallery</li>
+        <li>Case studies</li>
+        <li>Customer testimonials</li>
+      </ul>
+      <p><strong>Contact Page</strong></p>
+      <ul>
+        <li>Contact form</li>
+        <li>Quotation request form</li>
+        <li>Phone numbers</li>
+        <li>Email address</li>
+        <li>Social media links</li>
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <h2>Logo Concept</h2>
+      <p><strong>PV Logo</strong></p>
+      <p>The logo consists of the initials "PV" for PAVI Projects. The design uses red to represent energy, innovation, and action, and blue to symbolize trust, professionalism, reliability, and technical expertise.</p>
+      <ul>
+        <li>PV = Red</li>
+        <li>PAVI PROJECTS = Blue</li>
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <h2>Mission Statement</h2>
+      <p><em>"Delivering innovative, reliable, and sustainable project solutions through excellence in project management, security systems, electrical services, and renewable energy technologies."</em></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Site plan created for PAVI Projects within the WDD 131 project folder.</p>
+  </footer>
+</body>
+</html>
