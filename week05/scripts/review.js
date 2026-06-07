@@ -13,29 +13,29 @@ function formatDate(value) {
 // Same product array used by the form so we can map id -> name for display
 const products = [
   {
-    id: "fc-1888",
-    name: "flux capacitor",
-    averagerating: 4.5
+    id: "ss-10kva",
+    name: "10kva solar package",
+    averagerating: 4.9
   },
   {
-    id: "fc-2050",
-    name: "power laces",
+    id: "ss-5kva",
+    name: "5kva solar package",
     averagerating: 4.7
   },
   {
-    id: "fs-1987",
-    name: "time circuits",
-    averagerating: 3.5
+    id: "ss-3.2kva",
+    name: "3.2kva solar package",
+    averagerating: 4.4
   },
   {
-    id: "ac-2000",
-    name: "low voltage reactor",
-    averagerating: 3.9
+    id: "ss-1.5kva",
+    name: "1.5kva solar package",
+    averagerating: 4.2
   },
   {
-    id: "jj-1969",
-    name: "warp equalizer",
-    averagerating: 5.0
+    id: "ss-1kva",
+    name: "1kva solar package",
+    averagerating: 4.0
   }
 ];
 
