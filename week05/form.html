@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Product review form with responsive design and confirmation page.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <div class="page-intro">
+      <h1>Product Review Form</h1>
+      <p>Tell us what you think and help other customers choose the best product.</p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Submit your review</h2>
+      <form id="reviewForm" action="review.html" method="get">
+        <fieldset>
+          <legend>Product details</legend>
+
+          <label for="product">Product Name <span aria-hidden="true">*</span></label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Choose a Product ...</option>
+          </select>
+          <p id="productAverage" class="product-average">Average rating: —</p>
+
+          <fieldset class="rating-fieldset">
+            <legend>Overall Rating <span aria-hidden="true">*</span></legend>
+            <div class="rating" role="radiogroup" aria-labelledby="ratingLegend">
+              <span id="ratingLegend" class="sr-only">Overall rating stars</span>
+              <label class="star" for="rating5">
+                <input id="rating5" name="rating" type="radio" value="5" required>
+                <span class="star-label" aria-hidden="true">☆</span>
+                <span class="sr-only">5 stars</span>
+              </label>
+              <label class="star" for="rating4">
+                <input id="rating4" name="rating" type="radio" value="4" required>
+                <span class="star-label" aria-hidden="true">☆</span>
+                <span class="sr-only">4 stars</span>
+              </label>
+              <label class="star" for="rating3">
+                <input id="rating3" name="rating" type="radio" value="3" required>
+                <span class="star-label" aria-hidden="true">☆</span>
+                <span class="sr-only">3 stars</span>
+              </label>
+              <label class="star" for="rating2">
+                <input id="rating2" name="rating" type="radio" value="2" required>
+                <span class="star-label" aria-hidden="true">☆</span>
+                <span class="sr-only">2 stars</span>
+              </label>
+              <label class="star" for="rating1">
+                <input id="rating1" name="rating" type="radio" value="1" required>
+                <span class="star-label" aria-hidden="true">☆</span>
+                <span class="sr-only">1 star</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label for="installDate">Date of Installation <span aria-hidden="true">*</span></label>
+          <input id="installDate" name="installDate" type="date" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Useful features</legend>
+          <p class="feature-instructions">Select all the features you found useful.</p>
+          <div class="checkbox-group">
+            <label for="featureDurability">
+              <input id="featureDurability" name="usefulFeatures" type="checkbox" value="Durability">
+              Durability
+            </label>
+            <label for="featureEase">
+              <input id="featureEase" name="usefulFeatures" type="checkbox" value="Ease of use">
+              Ease of use
+            </label>
+            <label for="featurePerformance">
+              <input id="featurePerformance" name="usefulFeatures" type="checkbox" value="Performance">
+              Performance
+            </label>
+            <label for="featureDesign">
+              <input id="featureDesign" name="usefulFeatures" type="checkbox" value="Design">
+              Design
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your review</legend>
+
+          <label for="reviewText">Written Review</label>
+          <textarea id="reviewText" name="reviewText" rows="5" placeholder="Share your experience, what you liked, or what could be improved."></textarea>
+
+          <label for="userName">User Name</label>
+          <input id="userName" name="userName" type="text" placeholder="Optional">
+        </fieldset>
+
+        <div class="form-actions">
+          <input type="submit" value="Submit Review">
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2026 &bull; Victor Mtisi &bull; Zimbabwe &bull; Last Modification: 06/07/2026
+  </footer>
+  <script src="scripts/form.js"></script>
+</body>
+</html>

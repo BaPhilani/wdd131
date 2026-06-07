@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Review submission confirmation page.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <div class="page-intro">
+      <h1>Review Submitted</h1>
+      <p>Thank you for sharing your product experience.</p>
+    </div>
+  </header>
+  <main>
+    <section id="confirmation">
+      <div class="review-card">
+        <h2 id="confirmationTitle">Thank you — review received</h2>
+        <p id="confirmationMessage" class="lead"></p>
+
+        <div class="review-summary" id="reviewSummary" aria-live="polite"></div>
+
+        <div class="rating-visual" id="ratingStars" aria-hidden="true"></div>
+
+        <div class="review-count" id="reviewCount" role="status" aria-live="polite"></div>
+
+        <p class="review-actions"><a href="form.html">Post another review</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2026 &bull; Victor Mtisi &bull; Zimbabwe &bull; Last Modification: 06/07/2026
+  </footer>
+  <script src="scripts/review.js"></script>
+</body>
+</html>
