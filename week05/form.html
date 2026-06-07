@@ -17,7 +17,7 @@
   <main>
     <section>
       <h2>Submit your review</h2>
-      <form id="reviewForm" action="review.html" method="get">
+      <form id="reviewForm" action="review.html" method="get" autocomplete="on">
         <fieldset>
           <legend>Product details</legend>
 
@@ -60,7 +60,7 @@
           </fieldset>
 
           <label for="installDate">Date of Installation <span aria-hidden="true">*</span></label>
-          <input id="installDate" name="installDate" type="date" required>
+          <input id="installDate" name="installDate" type="date" autocomplete="off" required>
         </fieldset>
 
         <fieldset>
@@ -90,10 +90,10 @@
           <legend>Your review</legend>
 
           <label for="reviewText">Written Review</label>
-          <textarea id="reviewText" name="reviewText" rows="5" placeholder="Share your experience, what you liked, or what could be improved."></textarea>
+          <textarea id="reviewText" name="reviewText" rows="5" placeholder="Share your experience, what you liked, or what could be improved." autocomplete="off"></textarea>
 
           <label for="userName">User Name</label>
-          <input id="userName" name="userName" type="text" placeholder="Optional">
+          <input id="userName" name="userName" type="text" placeholder="Optional" autocomplete="name">
         </fieldset>
 
         <div class="form-actions">
