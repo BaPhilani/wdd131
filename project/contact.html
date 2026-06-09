@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact PAVI Projects to request a quote for solar, security, electrical, or estate management solutions.">
+  <meta name="author" content="Victor Mtisi">
+  <title>PAVI Projects | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"><span>P</span><span>V</span></div>
+        <span>PAVI Projects</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-block">
+      <div class="section-heading">
+        <h1>Contact and quotation request</h1>
+        <p>Send your project details, choose a service, and receive a quick response from our team.</p>
+      </div>
+      <form id="contact-form" class="form" novalidate>
+        <fieldset>
+          <legend>Project contact information</legend>
+          <label for="name">Full name<span class="required">*</span>
+            <input id="name" name="name" type="text" required>
+          </label>
+          <label for="email">Email address<span class="required">*</span>
+            <input id="email" name="email" type="email" required>
+          </label>
+          <label for="phone">Phone number
+            <input id="phone" name="phone" type="tel" placeholder="Optional">
+          </label>
+          <label for="service">Service requested<span class="required">*</span>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option value="Solar Energy Solutions">Solar Energy Solutions</option>
+              <option value="Security Systems">Security Systems</option>
+              <option value="Electrical Installation">Electrical Installation</option>
+              <option value="Estate Management">Estate Management</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Project details</legend>
+          <label for="timeline">Preferred timeline</label>
+          <input id="timeline" name="timeline" type="text" placeholder="Example: 4 weeks">
+          <label for="details">Project description<span class="required">*</span>
+            <textarea id="details" name="details" rows="6" required></textarea>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Save my request and receive updates about related services.
+          </label>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send request</button>
+        </div>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+
+      <section class="review-summary visually-hidden" id="contact-summary" aria-live="polite"></section>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p><a href="references.html">References</a> | <a href="siteplan.html">Site Plan</a></p>
+    <p>&copy; <span id="year"></span> PAVI Projects. All rights reserved.</p>
+  </footer>
+  <script src="scripts/site.js" defer></script>
+</body>
+</html>

@@ -32,6 +32,34 @@ header {
   border-bottom: 4px solid var(--primary-color);
 }
 
+.project-nav {
+  max-width: 960px;
+  margin: 0 auto 1rem;
+  padding: 0 1.25rem;
+}
+
+.project-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-nav a {
+  color: var(--neutral-color);
+  text-decoration: none;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.project-nav a:hover,
+.project-nav a:focus {
+  background: rgba(255, 255, 255, 0.22);
+}
+
 .brand {
   display: flex;
   align-items: center;
