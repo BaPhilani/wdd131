@@ -87,8 +87,10 @@ button {
   display: grid;
   place-items: center;
   border-radius: 18px;
-  background: linear-gradient(135deg, var(--secondary), var(--primary));
-  color: var(--neutral);
+  background: var(--neutral);
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  color: transparent;
   font-size: 1.1rem;
   font-weight: 700;
 }

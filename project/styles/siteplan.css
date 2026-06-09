@@ -86,11 +86,11 @@ header {
 }
 
 .logo-p {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .logo-v {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 h1, h2, h3 {
