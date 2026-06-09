@@ -93,6 +93,14 @@ button {
   font-weight: 700;
 }
 
+.logo .logo-p {
+  color: var(--primary);
+}
+
+.logo .logo-v {
+  color: var(--secondary);
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;

@@ -2,7 +2,8 @@ const servicesData = [
   {
     title: 'Solar Energy Solutions',
     category: 'Energy',
-    description: 'Design and install solar systems with battery backup, monitoring, and load management for homes and businesses.'
+    description: 'Design and install solar systems with battery backup, monitoring, and load management for homes and businesses.',
+    packages: ['10kVA', '5kVA', '3.2kVA', '1.5kVA', '1kVA']
   },
   {
     title: 'CCTV Surveillance Systems',
@@ -43,6 +44,13 @@ function setCurrentYear() {
   }
 }
 
+function setLastModified() {
+  const el = document.getElementById('lastModified');
+  if (!el) return;
+  const modified = document.lastModified || '';
+  el.textContent = `Last modified: ${modified} — Victor Mtisi`;
+}
+
 function setInnerHTML(container, html) {
   if (container) {
     container.innerHTML = html;
@@ -50,10 +58,15 @@ function setInnerHTML(container, html) {
 }
 
 function buildServiceCard(service) {
+  const packagesHtml = service.packages
+    ? `<p><strong>Packages:</strong> ${service.packages.join(', ')}</p>`
+    : '';
+
   return `
     <article>
       <h3>${service.title}</h3>
       <p>${service.description}</p>
+      ${packagesHtml}
       <p><strong>Category:</strong> ${service.category}</p>
     </article>
   `;
@@ -253,6 +266,7 @@ function initContactPage() {
 
 function initPage() {
   setCurrentYear();
+  setLastModified();
   initHomePreview();
   initServicesPage();
   initContactPage();
