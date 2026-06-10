@@ -25,7 +25,7 @@ const temples = [
         location: "Harare, Zimbabwe",
         dedicated: "2026, March, 1",
         area: 7600,
-        imageUrl: "images/harare_zimbabwe_temple.jpg"
+        imageUrl: "images/salt_lake_temple.jpeg"
     },
     {
         templeName: "Adelaide Australia",
