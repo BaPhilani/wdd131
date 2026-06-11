@@ -230,18 +230,26 @@ main {
 .project-card,
 .card {
   border-radius: 24px;
-  padding: 1.5rem;
   background: var(--accent);
   border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
 }
 
 .project-card {
   display: grid;
   gap: 1rem;
-  align-items: center;
+  align-items: stretch;
 }
 
-.project-card div {
+.project-card > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.project-card > div {
+  padding: 1.5rem;
   display: grid;
   gap: 0.75rem;
 }
